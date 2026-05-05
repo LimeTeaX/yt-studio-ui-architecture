@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Studio – Jackson Maju</title>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="yt-app">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sb-header">
+      <div class="yt-logo">
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="#cc0000">
+          <path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 00.5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 002.1 2.1C4.5 20.4 12 20.4 12 20.4s7.5 0 9.4-.5a3 3 0 002.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8z"/>
+          <polygon fill="#fff" points="9.6,15.6 15.8,12 9.6,8.4"/>
+        </svg>
+        <span class="logo-text">Studio</span>
+      </div>
+      <!-- Hamburger close button (visible inside drawer on mobile) -->
+      <button class="hamburger-close" id="sidebarClose" aria-label="Close menu">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+      </button>
+    </div>
+
+    <div class="sb-profile">
+      <div class="avatar-wrap">
+        <div class="avatar-img">
+          <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="36" cy="36" r="36" fill="#e8d5c4"/>
+            <circle cx="36" cy="28" r="12" fill="#c4956a"/>
+            <ellipse cx="36" cy="58" rx="18" ry="14" fill="#c4956a"/>
+          </svg>
+        </div>
+      </div>
+      <div class="ch-name">Jackson Maju</div>
+      <div class="ch-sub">3100 subscribers</div>
+    </div>
+
+    <div class="nav-divider"></div>
+
+    <ul class="menu" id="sidebarMenu">
+      <li class="nav-item" data-page="dashboard">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/></svg>
+        Dashboard
+      </li>
+      <li class="nav-item" data-page="content">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+        Content
+      </li>
+      <li class="nav-item" data-page="analytics">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3l5 8H7l5-8z"/></svg>
+        Analytics
+      </li>
+      <li class="nav-item" data-page="comments">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M21 6.5C21 5.1 19.9 4 18.5 4h-13C4.1 4 3 5.1 3 6.5v8C3 15.9 4.1 17 5.5 17H17l4 4V6.5z"/></svg>
+        Comments
+      </li>
+      <li class="nav-item" data-page="subtitles">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-10 7H4v-2h6v2zm4 4H4v-2h10v2zm6 0h-4v-2h4v2zm0-4h-8v-2h8v2z"/></svg>
+        Subtitles
+      </li>
+    </ul>
+
+    <div class="nav-divider"></div>
+
+    <ul class="menu" id="sidebarMenu2">
+      <li class="nav-item" data-page="copyright">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M14.5 8.5c-.8-.6-1.7-1-2.7-1C9.1 7.5 7 9.6 7 12s2.1 4.5 4.8 4.5c1 0 1.9-.4 2.7-1"/></svg>
+        Copyright
+      </li>
+      <li class="nav-item" data-page="monetization">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg>
+        Monetization
+      </li>
+      <li class="nav-item" data-page="settings">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M19.14 12.94c.04-.3.06-.61.06-.94s-.02-.64-.07-.94l2.03-1.58a.49.49 0 00.12-.61l-1.92-3.32a.49.49 0 00-.59-.22l-2.39.96a7 7 0 00-1.62-.94l-.36-2.54a.484.484 0 00-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54a7.37 7.37 0 00-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87a.47.47 0 00.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58a.49.49 0 00-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54a7.37 7.37 0 001.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32a.47.47 0 00-.12-.61l-2.01-1.58zM12 15.6a3.6 3.6 0 110-7.2 3.6 3.6 0 010 7.2z"/></svg>
+        Settings
+      </li>
+    </ul>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+    <!-- TOPBAR (adaptive) -->
+    <div class="topbar" id="topbar">
+      <!-- Hamburger open button (mobile only) -->
+      <button class="hamburger-open" id="sidebarOpen" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+      </button>
+      <div id="topbarLeft"></div>
+      <div id="topbarRight" class="range-wrap">
+        <div class="date-range" id="dateRangeLabel">Jan 2 – 29, 2019</div>
+        <select class="range-sel" id="rangeSelect">
+          <option value="7">Last 7 days</option>
+          <option value="28" selected>Last 28 days</option>
+          <option value="90">Last 90 days</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- DYNAMIC CONTENT MOUNT -->
+    <div class="content" id="contentMount"></div>
+  </main>
+
+  <!-- Sidebar overlay (mobile only) -->
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
